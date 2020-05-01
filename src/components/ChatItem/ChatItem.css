@@ -1,0 +1,52 @@
+.chat{
+    display: flex;
+    outline: 1px solid gray;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.chat__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+.chat__avatar{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.chat__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    margin: 10px;
+}
+
+.chat__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chat__title{
+    color: rgb(103, 203, 206);
+    margin: 0;
+}
+
+.chat__date{
+    font-weight: 600;
+}
+
+.chat__message{
+    height: 1.5em;
+    overflow: hidden;
+}
+
+.chat__author{
+    font-weight: 600;
+}

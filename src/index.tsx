@@ -1,17 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {ChatProps} from './components/ChatItem/ChatItem';
+import {currentDate} from './components/ChatItem/ChatItem';
+import {ChatList} from './components/ChatList/ChatList';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const сhatsArr: ChatProps[] = [
+  {
+    title: 'My Chat1',
+    data: currentDate,
+    name: 'React-whale',
+    text: 'Hello beauty, whats up?...'
+  },
+  {
+    title: 'My Chat2',
+    data: currentDate,
+    name: 'React-whale',
+    text: 'Hello beauty, whats up?...'
+  },
+  {
+    title: 'My Chat3',
+    data: currentDate,
+    name: 'React-whale',
+    text: 'Hello beauty, whats up?...'
+  },
+  {
+    title: 'My Chat4',
+    data: currentDate,
+    name: 'React-whale',
+    text: 'Hello beauty, whats up?...'
+  },
+  {
+    title: 'My Chat5',
+    data: currentDate,
+    name: 'React-whale',
+    text: 'Hello beauty, whats up?...'
+  }
+];
+
+
+ReactDOM.render(<ChatList chats={сhatsArr} />, document.getElementById('root'));
