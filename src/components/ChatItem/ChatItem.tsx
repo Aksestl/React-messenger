@@ -1,29 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import './ChatItem.css';
 import logo from '../../img/logo.png';
+import {ChatItemProps} from './types';
 
-export interface ChatProps {
-    id?: string;
-    title: string;
-    data: string;
-    name: string;
-    text: string; 
-};
+export const ChatItem = (props: ChatItemProps) => {
+    //{isActiveChat ? 'chat__active' : ''}
 
-const date = new Date();
-const options = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
-};
-
-export let currentDate = date.toLocaleString("ru", options);
-
-export const ChatItem = (props: ChatProps) => {
-    return (
-        <li className='chat' id={props.id}>
-            <a className='chat__container'>
+    return ( 
+        <li className='chat' id={props.id} onClick={()=>{props.handleClickChat(props.id)}}> 
+            <div className='chat__container'>
                 <img className='chat__avatar' src={logo} alt={props.title}/>
 
                 <div className='chat__body'>
@@ -37,7 +23,7 @@ export const ChatItem = (props: ChatProps) => {
                     </div>
 
                 </div>
-            </a>
+            </div>
         </li> 
     
     )

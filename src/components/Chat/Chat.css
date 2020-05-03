@@ -1,0 +1,6 @@
+.chat{
+    width: 100%;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+}

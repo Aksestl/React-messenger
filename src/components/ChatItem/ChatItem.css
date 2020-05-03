@@ -2,7 +2,7 @@
     display: flex;
     outline: 1px solid gray;
     margin: 0 auto;
-    width: 30%;
+    width: 75%;
 }
 
 .chat__container{
@@ -49,4 +49,8 @@
 
 .chat__author{
     font-weight: 600;
+}
+
+.chat__active{
+    background-color: rgba(66, 153, 127, 0.7);
 }
