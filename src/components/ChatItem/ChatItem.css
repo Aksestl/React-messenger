@@ -1,7 +1,7 @@
 .chat{
     display: flex;
     outline: 1px solid gray;
-    margin: 0 auto;
+    margin: auto;
     width: 75%;
 }
 
@@ -54,3 +54,4 @@
 .chat__active{
     background-color: rgba(66, 153, 127, 0.7);
 }
+ 

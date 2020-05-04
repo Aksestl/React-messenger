@@ -5,10 +5,9 @@ import logo from '../../img/logo.png';
 import {ChatItemProps} from './types';
 
 export const ChatItem = (props: ChatItemProps) => {
-    //{isActiveChat ? 'chat__active' : ''}
-
+    
     return ( 
-        <li className='chat' id={props.id} onClick={()=>{props.handleClickChat(props.id)}}> 
+        <li className={'chat'}  id={props.id} onClick={()=>{props.handleClickChat(props.id)}}> 
             <div className='chat__container'>
                 <img className='chat__avatar' src={logo} alt={props.title}/>
 

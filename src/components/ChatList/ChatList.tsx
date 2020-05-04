@@ -33,8 +33,7 @@ export class ChatList extends React.Component <ChatListProps> {
                     data={chat.data} 
                     name={chat.name} 
                     text={chat.text}
-                    handleClickChat={this.props.handleClickChat}
-                    //isActiveChat={prop.activeChatId === chat.id}
+                    handleClickChat={prop.handleClickChat}
                 ></ChatItem>
             );
         })
